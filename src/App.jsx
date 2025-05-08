@@ -8,12 +8,15 @@ import Favoritos from './Componentes/Favoritos'
 import Original from './Componentes/Original'
 import Usuario from './Componentes/Usuario'
 import Menu from './Componentes/Menu';
+import { AppProvider } from './contexto/contexto';
+import Capturados from './Componentes/capturados';
 
 
 
 function App() {
 
   return (
+    <AppProvider>
     <Router>
 
       <Menu />
@@ -26,9 +29,11 @@ function App() {
         <Route path="/favoritos" element={<Favoritos />} />
         <Route path="/:nombre" element={<Detalle />} />
         <Route path="/detalle/:name" element={<Detalle />} />
+        <Route path="/capturados" element={<Capturados />} />
       </Routes>
    
     </Router>
+    </AppProvider>
   );
 }
 
