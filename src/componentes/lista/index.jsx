@@ -2,10 +2,10 @@ import { useState, useEffect, useContext } from 'react'
 import { AppContext } from '../../contexto/contexto';
 import { useNavigate } from "react-router-dom";
 import './style.css'
-import Filtro from '../filtros';
+import Filtro from '../filtro'
 
-function Listar() {
-
+function Lista() {
+  
   const navigate = useNavigate();
   const [busqueda, setBusqueda] = useState('');
 
@@ -57,5 +57,5 @@ function Listar() {
     </>
   );
 }
-
-export default Listar
+  
+export default Lista

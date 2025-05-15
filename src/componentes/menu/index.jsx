@@ -1,7 +1,6 @@
 import "./style.css"
 import { Link } from 'react-router-dom';
 
-
 function Menu() {
     return (
         <nav className="c-menu">
@@ -13,5 +12,5 @@ function Menu() {
         </nav>
     )
   }
- 
+  
   export default Menu

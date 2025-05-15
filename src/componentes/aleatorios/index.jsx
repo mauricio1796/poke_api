@@ -7,12 +7,7 @@ function Aleatorios() {
   const [aleatorio, setAleatorio] = useState([])
   
   setTipoSeleccionado("All")
- 
-/*
-  useEffect(() => {
-    console.log("Actualizado:", listaCapturados);
-  }, [listaCapturados]);
-*/
+
   const navigate = useNavigate();
 
   const generar = () => {
